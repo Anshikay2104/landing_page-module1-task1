@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(/images/new.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #ef7c91;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        #top {
+            margin-top: 60px;
+            text-align: center;
+        }
+        #banner {
+            width: 100%;
+            height: 280px;
+            background: url('banner.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #0d0d0d;
+            font-family: cursive;
+            text-align: justify;
+        }
+
+        #featured-content,
+        #recent-updates,
+        #upcoming-events {
+            
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+            #slideshow {
+                position: relative;
+                max-width: 1000px;
+                margin: auto;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+    
+            .slide {
+                display: none;
+                width: 1000px;
+                height: 500px;
+            }
+    
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+    
+            #prev, #next {
+                position: absolute;
+                top: 50%;
+                font-size: 1.5em;
+                color: #fff;
+                background-color: #333;
+                padding: 0.3em 0.5em;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                transform: translateY(-50%);
+            }
+    
+            #prev {
+                left: 10px;
+            }
+    
+            #next {
+                right: 10px;
+            }
+            #recent-updates {
+                margin-top: 160px;
+                padding: 2em;
+                text-align: center;
+            }
+    
+            .update-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 50px;
+                
+            }
+    
+            .update-box {
+                width: 300px;
+                height: 450px;
+                margin: 5px;
+                overflow: hidden;
+                position: relative;
+                border-radius: 10px;
+                border:12px solid rgb(211, 205, 205);
+            }
+    
+            .update-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+    
+            .update-description {
+                margin-top: 10px;
+                text-align: center;
+            }
+            #blog {
+                padding: 2em;
+                text-align: center;
+            }
+    
+            .blog-post {
+                margin-bottom: 30px;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            .blog-post img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-bottom: 2px solid #ddd;
+            }
+    
+            .blog-post .post-content {
+                padding: 20px;
+            }
+    
+            .blog-post h3 {
+                margin-top: 0;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Community Website</h1>
+        <p>Welcome to our vibrant community!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Events</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div id="top">
+        <h1>Connecting Communities</h1>
+    </div>
+    <div id="banner">
+        <h2>Connecting Communities is more than just a phrase for us; it's a commitment to fostering meaningful relationships and shared experiences. We believe in the power of connectivity to bridge gaps, ignite conversations, and build a tapestry of diverse yet interconnected communities.Join us on this journey of building bridges, breaking barriers, and creating a vibrant network where communities thrive in unity, understanding, and collaboration."</h2>
+    </div>
+
+    <section id="featured-content">
+        <h2>Featured Content</h2>
+        <!-- Add your featured content here -->
+            <div id="slideshow">
+                <div class="slide">
+                    <img src="/images/i.jpeg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="/images/ii.webp" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="/images/iii.jpeg" alt="Slide 3">
+                </div>
+                <!-- Add more slides as needed -->
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+    </section>
+
+    <section id="recent-updates">
+        <h2>Recent Updates</h2>
+        <div class="update-container">
+            <div class="update-box">
+                <img class="update-image" src="/images/images.jpeg" alt="Update 1">
+                <div class="update-description">Description for Update 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error soluta voluptatum odio, fugiat sapiente corrupti temporibus eos ut ullam illo debitis voluptatem laborum repellendus consequatur amet vel quibusdam natus expedita.</div>
+            </div>
+            <div class="update-box">
+                <img class="update-image" src="/images/img.jpeg" alt="Update 2">
+                <div class="update-description">Description for Update 2</div>
+            </div>
+            <div class="update-box">
+                <img class="update-image" src="/images/imga.jpeg" alt="Update 3">
+                <div class="update-description">Description for Update 3</div>
+            </div>
+            
+        </div>
+       
+    </section>
+
+    <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <!-- Add your upcoming events content here -->
+    </section>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        document.getElementById('next').addEventListener('click', nextSlide);
+        document.getElementById('prev').addEventListener('click', prevSlide);
+
+        // Show the first slide initially
+        showSlide(currentSlide);
+    </script>
+
+    <section id="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-post">
+            <img src="/images/jhu.webp" alt="Blog Post 1">
+            <div class="post-content">
+                <h3>Discovering the Beauty of Community Diversity</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis vel ex varius euismod ut vel ipsum...</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="/images/pig.png" alt="Blog Post 2">
+            <div class="post-content">
+                <h3>The Impact of Community Engagement</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis vel ex varius euismod ut vel ipsum...</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Community Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
